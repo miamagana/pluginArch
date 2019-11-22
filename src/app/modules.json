@@ -1,0 +1,12 @@
+[
+    {
+        "path": "play",
+        "route": "plugins/play/play.module",
+        "moduleName": "PlayModule"
+    },
+    {
+        "path": "plug",
+        "route": "plugins/plug/plug.module",
+        "moduleName": "PlugModule"
+    }
+]
