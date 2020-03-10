@@ -8,15 +8,14 @@ import { interfacePlugins } from '../../plugins.config';
 export class PluginConfigurationService {
   constructor(private injector: Injector) { }
 
-  loadRoutes(): Promise<boolean> {
+  loadRoutes(): void {
     const router: Router = this.injector.get(Router);
     console.log(router.config);
     router.resetConfig([...router.config, ...this.createRoutes()]);
     console.log(router.config);
-    return Promise.resolve(true);
   }
 
-  createRoutes(): Route[] {
+  private createRoutes(): Route[] {
     const result: Route[] = [];
     interfacePlugins.forEach(
       (route: { path: string; route: string; moduleName: string }) => {

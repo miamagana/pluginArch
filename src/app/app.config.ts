@@ -2,6 +2,6 @@ import { PluginConfigurationService } from './services/plugin-configuration/plug
 
 export function importPlugins(
   config: PluginConfigurationService
-): () => Promise<boolean> {
+): () => void {
   return () => config.loadRoutes();
 }
