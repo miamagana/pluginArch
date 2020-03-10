@@ -23,7 +23,7 @@ export class PluginConfigurationService {
         result.push({
           path: route.path,
           loadChildren: () =>
-            import('./' + route.route).then(m => m[route.moduleName])
+            import('../../' + route.route).then(m => m[route.moduleName])
         });
       }
     );

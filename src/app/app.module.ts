@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PluginConfigurationService } from './services/plugin-configuration/plugin-configuration.service';
 import { importPlugins } from './app.config';
+import { PluginConfigurationService } from './services/plugin-configuration/plugin-configuration.service';
 
 @NgModule({
   declarations: [AppComponent],
