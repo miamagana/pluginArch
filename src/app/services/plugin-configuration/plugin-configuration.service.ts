@@ -1,6 +1,6 @@
 import { Injectable, Injector } from '@angular/core';
 import { Route, Router } from '@angular/router';
-import { interfacePlugins } from '../../plugins.config';
+import { interfacePlugins, InterfacePlugin } from '../../plugins.config';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class PluginConfigurationService {
   private createRoutes(): Route[] {
     const result: Route[] = [];
     interfacePlugins.forEach(
-      (route: { path: string; route: string; moduleName: string }) => {
+      (route: InterfacePlugin) => {
         result.push({
           path: route.path,
           loadChildren: () =>
