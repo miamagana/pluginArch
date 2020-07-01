@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+The main target of the project is to provide an Angular architecture with the capability to load and use externally developed modules as its own modules. All that is possible using lazy loading and dynamic routing.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
